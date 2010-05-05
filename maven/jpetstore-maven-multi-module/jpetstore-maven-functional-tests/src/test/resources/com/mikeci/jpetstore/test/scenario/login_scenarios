@@ -1,0 +1,23 @@
+Scenario: Successful Login
+
+Given the user opens the home page
+When the user clicks the enter store link
+Then the store front page should be displayed
+When the user clicks the sign in link
+Then the store login page should be displayed
+When the user enters username j2ee
+And the user enters password j2ee
+And the user clicks the login button
+Then the store front page should be displayed for user ABC
+
+Scenario: Invalid Login
+
+Given the user opens the home page
+When the user clicks the enter store link
+Then the store front page should be displayed
+When the user clicks the sign in link
+Then the store login page should be displayed
+When the user enters username wrong
+And the user enters password combination
+And the user clicks the login button
+Then the invalid login error message should be displayed
