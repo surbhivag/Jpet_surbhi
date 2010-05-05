@@ -15,7 +15,7 @@
 
 	<properties>
 		<jdkVersion>1.6</jdkVersion>
-		<mvnVersion>2.2.1</mvnVersion>
+		<mvnVersion>2.2.0</mvnVersion>
 	</properties>
 
 	<build>
