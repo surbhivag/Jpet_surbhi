@@ -21,6 +21,11 @@ public class StoreFrontPage extends Page {
 		return new StoreLoginPage(selenium, runner);
 	}
 	
+	public void clickSignOutLink(){
+		clickLink("Sign Out");
+		waitForPageToLoad();
+	}
+	
 	public void verifyPresenceOfUserWelcomeMessage(String user){
 		textIsVisible("Welcome "+user+"!");
 	}

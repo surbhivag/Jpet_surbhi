@@ -1,5 +1,6 @@
 package com.mikeci.jpetstore.test.scenario;
 
+import org.jbehave.scenario.annotations.AfterScenario;
 import org.jbehave.scenario.annotations.Given;
 import org.jbehave.scenario.annotations.Then;
 import org.jbehave.scenario.annotations.When;
@@ -18,7 +19,7 @@ public class LoginSteps extends SeleniumSteps {
 	@Given("the user opens the home page")
 	public void theUserOpensTheHomePage(){
 		homePage = new HomePage(selenium, runner);
-		homePage.open("http://localhost:8080/jpetstore");
+		homePage.open("/jpetstore");
 	}
 	
 	@When("the user clicks the enter store link")
@@ -66,5 +67,15 @@ public class LoginSteps extends SeleniumSteps {
 	public void theInvalidLoginErrorMessageShouldBeDisplayed(){
 		storeLoginPage.verifyPresenceOfInvalidCredentialsErrorMessage();
 	}
+
+	@Override
+	@AfterScenario
+	public void afterScenario() throws Exception {
+		super.afterScenario();
+		waitFor(5);
+	}
+
+	
+	
 
 }
