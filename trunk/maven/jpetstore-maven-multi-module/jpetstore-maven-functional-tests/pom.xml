@@ -157,7 +157,7 @@
 								<id>xvfb</id>
 								<phase>process-test-resources</phase>
 								<configuration>
-									<display>:99</display>
+									<!--<display>:99</display>-->
 									<background>true</background>
 								</configuration>
 								<goals>
