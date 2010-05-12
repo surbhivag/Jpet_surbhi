@@ -7,7 +7,7 @@
 	<packaging>war</packaging>
 	<version>1.0-SNAPSHOT</version>
 	<name>jpetstore-maven</name>
-	<url>http://maven.apache.org</url>
+	<url>http://mikeci.com</url>
 
 	<properties>
 		<ibatisVersion>2.1.6</ibatisVersion>
